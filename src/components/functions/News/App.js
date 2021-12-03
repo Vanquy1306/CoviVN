@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import InfiniteScroll from 'react-infinite-scroll-component'
 import useForceUpdate from 'use-force-update'
 import newsApi from '../../../api/newsApi'
-import Article from '../../Article'
+import Article from './Article'
 // import Header from '../../Header'
 
 function App() {

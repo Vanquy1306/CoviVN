@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import $ from 'jquery'
-import categoriesApi from '../api/categoriesApi'
+import categoriesApi from '../../../api/categoriesApi'
 
 function Header(props) {
   const [categories, setCategories] = useState([])
