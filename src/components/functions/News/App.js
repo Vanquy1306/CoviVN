@@ -3,10 +3,7 @@ import InfiniteScroll from 'react-infinite-scroll-component'
 import useForceUpdate from 'use-force-update'
 import newsApi from '../../../api/newsApi'
 import Article from '../../Article'
-import Header from '../../Header'
-import customize from '../../../styles/customize'
-import '../../../styles/index.css'
-import { Windmill } from '@windmill/react-ui'
+// import Header from '../../Header'
 
 function App() {
   const forceUpdate = useForceUpdate()
@@ -39,9 +36,8 @@ function App() {
 
   return (
     <React.Fragment>
-        <Windmill theme={customize}>
 
-      <Header onChangeCategory={onChangeCategory} />
+      {/* <Header onChangeCategory={onChangeCategory} /> */}
       <div className="mt-20">
         <InfiniteScroll
           dataLength={news.length}
@@ -51,9 +47,8 @@ function App() {
             <Article key={index} article={item} />
           ))}
         </InfiniteScroll>
-      </div>
-      </Windmill>,
 
+      </div>
     </React.Fragment>
   )
 }
